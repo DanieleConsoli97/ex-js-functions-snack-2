@@ -2,9 +2,11 @@ const contoAllaRovescia = (num) => {
   let i = num;
   const idSetInteval = setInterval(() => {
     console.log(i);
-    i--;
-    if (i < 0) {
-      clearInterval(idSetInteval);
+    
+    if (i > 0) {
+     i--;
+    }else{
+       clearInterval(idSetInteval);
         console.log("FINE!");
     }
   }, 1000);
