@@ -1,6 +1,6 @@
 function creaContatoreAutomatico(timer) {
+  let contatore = 0;
   return function () {
-    let contatore = 0;
     setInterval(() => {
       contatore++;
       console.log(contatore);

@@ -1,10 +1,9 @@
-function stampaOgniSecondo (){
-    return (messaggio)=>{
+function stampaOgniSecondo (messaggio){
+    return ()=>{
         setInterval(()=>{
           return console.log(messaggio)
         },1000)
     }
 }
 
-const ognisec = stampaOgniSecondo()
-ognisec("ciao")
+stampaOgniSecondo("ciao")
